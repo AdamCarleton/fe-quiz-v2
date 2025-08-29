@@ -1,0 +1,14 @@
+export const shadowDragon = "../images/shadow_dragon/";
+export const echoes = "../images/shadows_of_valentia/";
+export const newMystery = "../images/new_mystery_of_the_emblem/";
+export const genealogy = "../images/genealogy_of_the_holy_war/";
+export const thracia = "../images/thracia_776/";
+export const bindingBlade = "../images/binding_blade/";
+export const blazingBlade = "../images/blazing_blade/";
+export const sacredStones = "../images/sacred_stones/";
+export const pathOfRadiance = "../images/path_of_radiance/";
+export const radiantDawn = "../images/radiant_dawn/";
+export const awakening = "../images/awakening/";
+export const fates = "../images/fates/";
+export const threeHouses = "../images/three_houses/";
+export const engage = "../images/engage/";
