@@ -284,9 +284,70 @@ function checkWin() {
    // return true
 }
 
-function playAgain() {
-
+function quit() {
+    characters.map((unit, index) => {
+        if (unit.isFound === false) {
+            units[index].classList.add("missed-border");
+            names[index].classList.add("missed-name");
+        }
+        units[index].setAttribute("src", unit.img1);
+        names[index].innerHTML = unit.name;
+    });
 }
+
+function playAgain() {
+    gameWin.classList.add("hide");
+
+    // set each game score back to 0
+    shadowDragonScore = 0;
+    echoesScore = 0;
+    newMysteryScore = 0;
+    genealogyScore = 0;
+    thraciaScore = 0;
+    bindingBladeScore = 0;
+    blazingBladeScore = 0;
+    sacredStonesScore = 0;
+    pathOfRadianceScore = 0;
+    radiantDawnScore = 0;
+    awakeningScore = 0;
+    fatesScore = 0;
+    threeHousesScore = 0;
+
+    // remove highlighted border
+    gameBorder.map((element) => {
+        element.classList.remove("complete");
+    })
+
+    // set player score to = and display 0 score
+    playerScore = 0;
+
+    score.innerHTML = `${playerScore} / ${characters.length}`;
+
+    // loop through units replacing picture and setting not found
+    units.map((unit, index) => {
+        unit.classList.remove("found");
+        characters[index].isFound = false;
+        unit.setAttribute("src", "./images/FE_Logo.png");
+    });
+
+    // remove names
+    names.map((name) => {
+        name.innerHTML = "";
+    })
+}
+
+window.playAgain = playAgain
+
+document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById("give-up");
+    if (button) {
+        button.addEventListener("click", quit);
+    }
+    const button2 = document.getElementById("reset");
+    if (button2) {
+        button2.addEventListener("click", reset);
+    } 
+});
 
 
 document.addEventListener("keydown", function (e) {
