@@ -27,6 +27,7 @@ const games = [
 ];
 
 // variables to check number of units in a game
+// used in highlight function
 let shadowDragonTotal;
 let shadowDragonScore = 0;
 let echoesTotal;
@@ -68,9 +69,79 @@ const score = document.querySelector(".score");
 const gameWin = document.querySelector(".win-container");
 let gaveUp = false;
 
+// CHECK GUESS
 function checkGuess(guess) {
+    const inputElement = document.querySelector(".guess");
+    const inputValue = inputElement.value;
+    let storedString = inputValue.toLowerCase();
 
+    const currentDate = new Date();
+    const currentSeconds = currentDate.getSeconds();
+
+    units.map((unit, index) => {
+        if (storedString === units[index].id && !characters[index].isFound) {
+            unit.setAttribute("src", characters[index].img1);
+
+            // imcrement the count for game associated with characters
+            if (characters[index].isFound === false) { // ensures you can't just enter the same character multiple times
+                switch (characters[index].game) {
+                    case "Shadow Dragon":
+                        shadowDragonScore++;
+                        break;
+                    case "Echoes: Shadows of Valentia":
+                        echoesScore++;
+                        break;
+                    case "New Mystery of the Emblem":
+                        newMysteryScore++;
+                        break;
+                    case "Genealogy of the Holy War":
+                        genealogyScore++;
+                        break;
+                    case "Thracia 776":
+                        thraciaScore++;
+                        break;
+                    case "Binding Blade":
+                        bindingBladeScore++;
+                        break;
+                    case "Blazing Blade":
+                        blazingBladeScore++;
+                        break;
+                    case "Sacred Stones":
+                        sacredStonesScore++;
+                        break;
+                    case "Path of Radiance":
+                        pathOfRadianceScore++;
+                        break;
+                    case "Radiant Dawn":
+                        radiantDawnScore++;
+                        break;
+                    case "Awakening":
+                        awakeningScore++;
+                        break;
+                    case "Fates":
+                        fatesScore++
+                        break;
+                    case "Three Houses":
+                        threeHousesScore++;
+                        break;
+                }
+            }
+
+            characters[index].isFound = true;
+            unit.classList.add("found"); // to count score easier
+            playerScore = document.querySelectorAll(".found").length;
+            names[index].innerHTML = characters[index].name;
+        }
+    });
+    inputElement.value = "";
+    highlightGame();
+
+    score.innerHTML = `${playerScore} / ${characters.length}`;
+
+    checkWin();
 }
+
+window.checkGuess = checkGuess;
 
 function changeImg() {
     console.log("changeImg loaded");
@@ -78,6 +149,39 @@ function changeImg() {
 
 // window.changeImg = changeImg;
 window.addEventListener("DOMContentLoaded", changeImg);
+
+function highlightGame() {
+    characters.map((unit) => {
+
+        if (unit.isFound && unit.game === "Shadow Dragon" && shadowDragonScore === shadowDragonTotal) {
+            gameBorder[0].classList.add("complete");
+        } else if (unit.isFound && unit.game === "Echoes: Shadows of Valentia" && echoesScore === echoesTotal) {
+            gameBorder[1].classList.add("complete");
+        } else if (unit.isFound && unit.game === "New Mystery of the Emblem" && newMysteryScore === newMysteryTotal) {
+            gameElements[2].classList.add("complete");
+        } else if (unit.isFound && unit.game === "Genealogy of the Holy War" && genealogyScore === genealogyTotal) {
+            gameElements[3].classList.add("complete");
+        } else if (unit.isFound && unit.game === "Thracia 776" && thraciaScore === thraciaTotal) {
+            gameElements[4].classList.add("complete");
+        } else if (unit.isFound && unit.game === "Binding Blade" && bindingBladeScore === bindingBladeTotal) {
+            gameElements[5].classList.add("complete");
+        } else if (unit.isFound && unit.game === "Blazing Blade" && blazingBladeScore === blazingBladeTotal) {
+            gameElements[6].classList.add("complete");
+        } else if (unit.isFound && unit.game === "Sacred Stones" && sacredStonesScore === sacredStonesTotal) {
+            gameElements[7].classList.add("complete");
+        } else if (unit.isFound && unit.game === "Path of Radiance" && pathOfRadianceScore === pathOfRadianceTotal) {
+            gameElements[8].classList.add("complete");
+        } else if (unit.isFound && unit.game === "Radiant Dawn" && radiantDawnScore === radiantDawnTotal) {
+            gameElements[9].classList.add("complete");
+        } else if (unit.isFound && unit.game === "Awakening" && awakeningScore === awakeningTotal) {
+            gameElements[10].classList.add("complete");
+        } else if (unit.isFound && unit.game === "Fates" && fatesScore === fatesTotal) {
+            gameElements[11].classList.add("complete");
+        } else if (unit.isFound && unit.game === "Three Houses" && threeHousesScore === threeHousesTotal) {
+            gameElements[12].classList.add("complete");
+        }
+    });
+}
 
 // INITIALIZE GAME
 
@@ -150,6 +254,21 @@ function createGame() {
         });
     });
 
+    // Get total number of character per game
+    shadowDragonTotal = document.querySelectorAll(".fe1");
+    echoesTotal = document.querySelectorAll(".fe2");
+    newMysteryTotal = document.querySelectorAll(".fe3");
+    genealogyTotal = document.querySelectorAll(".fe4");
+    thraciaTotal = document.querySelectorAll(".fe5");
+    bindingBladeTotal = document.querySelectorAll(".fe6");
+    blazingBladeTotal = document.querySelectorAll(".fe7");
+    sacredStonesTotal = document.querySelectorAll(".fe8");
+    pathOfRadianceTotal = document.querySelectorAll(".fe9");
+    radiantDawnTotal = document.querySelectorAll(".fe10");
+    awakeningTotal = document.querySelectorAll(".fe11");
+    fatesTotal = document.querySelectorAll(".fe12");
+    threeHousesTotal = document.querySelectorAll(".fe13");
+
     gameElements = document.querySelectorAll(".game");
     gameBorder = [...gameElements];
     contentGenerated = true;
@@ -159,10 +278,19 @@ function createGame() {
 startButton.addEventListener("click", createGame);
 
 function checkWin() {
-   
+   if (playerScore === totalCount && gaveUp === false) {
+    gameWin.classList.remove("hide");
+   }
+   // return true
 }
 
 function playAgain() {
 
 }
 
+
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+        checkGuess();
+    }
+})
