@@ -160,7 +160,20 @@ img {
     height: 40%;
 }
 
+.play-again {
+    position: relative;
+    justify-content: center;
+}
+
 .congrats {
     color: var(--darkblue);
     text-align: center;
+}
+
+.missed-border {
+    border: 1px solid var(--red);
+}
+
+.missed-name {
+    color: var(--red);
 }
