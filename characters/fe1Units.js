@@ -1,4 +1,3 @@
-import { startTransition } from "react";
 import { shadowDragon } from "../public/Paths.js";
 
 const FE1Units = [
