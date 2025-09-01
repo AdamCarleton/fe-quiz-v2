@@ -7,29 +7,33 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body onload="createGame()">
+
+<body>
     <!--TOP SECTION-->
     <div class="title">
         <p>FIRE EMBLEM CHARACTER QUIZ</p>
     </div>
     <div class="top-bar">
-        <input type="text" placeholder="guess character name" class="guess" />
-        <button onclick="checkGuess()" type="submit">Guess</button>
-        <h2 class="score">0 / 0</h2>
+        <input type="text" placeholder="guess character name" class="guess"/>
+        <button onclick="checkGuess()" type="submit">Guess</button> 
+        <h2 class="score">0 / </h2>
         <button id="give-up" class="quit">Give Up?</button>
     </div>
 
     <!--GAME BOARD-->
-    <div class="centering">
+   <div class="centering">
         <div class="container" id="game-board">
             <div id="start-container">
                 <button id="start-game">Full Game</button>
             </div>
+                
+                
         </div>
-    </div>
+   </div>
     
-    <!--FOOTER-->
-    <footer></footer>
+
+   <!--FOOTER-->
+    <!-- <footer>made by Adam Carleton</footer> -->
 
     <div class="win-container hide">
         <div class="game-win">
@@ -38,6 +42,9 @@
         </div>
     </div>
 
-    <script type="module" src="./index.js"></script>
+    
+    
+    
+    <script type="module" src="index.js"></script>
 </body>
 </html>
