@@ -65,8 +65,80 @@ button:hover {
     justify-content: center;
 }
 
+img {
+    margin: 10px;
+    border-radius: 30%;
+    background-color: var(--lightblue);
+}
+
+.character {
+    margin: 1px;
+    text-align: center;
+}
+
+.character > img {
+    width: 40px;
+    height: 40px;
+    margin-top: 3px;
+}
+
+.character p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    text-align: center;
+    height: 12px;
+    /* margin-bottom: 1px; */
+}
+
+.name {
+    text-align: center;
+    font-size: 1rem;
+    color: var(--yellow);
+    font-weight: bold;
+}
+
+/* Individual Game Containers */
+.game {
+    position: relative;
+    top: 50px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows:  auto;
+    border: 2px solid var(--lightblue);
+    border-radius: 5px;
+    height: auto;
+}
+
+.game-title {
+    color: var(--yellow);
+    grid-column: span 7;
+    text-align: left;
+    margin: 5px;
+}
+
 .hide {
     visibility: hidden;
+}
+
+.complete {
+    border: 2px solid var(--yellow);
+}
+
+.dlc {
+    border: 1px solid var(--orange);
+}
+
+.dlc-name {
+    color: var(--orange);
+}
+
+.post-game {
+    border: 1px solid var(--red);
+}
+
+.post-game-name {
+    color: var(--red);
 }
 
 .win-container {
@@ -86,4 +158,9 @@ button:hover {
     border-radius: 20%;
     width: 70%;
     height: 40%;
+}
+
+.congrats {
+    color: var(--darkblue);
+    text-align: center;
 }
