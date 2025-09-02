@@ -1,6 +1,6 @@
 import FE1Units from './characters/fe1Units.js';
 import FE2Units from './characters/fe2Units.js';
-import { echoes } from './public/Paths.js';
+import FE3Units from './characters/fe3Units.js';
 
 const unitList = document.querySelectorAll(".unit");
 const units = [...unitList];
@@ -61,7 +61,8 @@ let playerScore = 0;
 
 const characters = [
     ...FE1Units,
-    ...FE2Units
+    ...FE2Units,
+    ...FE3Units
 ];
 
 const totalCount = characters.length;
