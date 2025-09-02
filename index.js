@@ -1,5 +1,6 @@
 import FE1Units from './characters/fe1Units.js';
 import FE2Units from './characters/fe2Units.js';
+import { echoes } from './public/Paths.js';
 
 const unitList = document.querySelectorAll(".unit");
 const units = [...unitList];
@@ -153,10 +154,12 @@ window.addEventListener("DOMContentLoaded", changeImg);
 function highlightGame() {
     characters.map((unit) => {
 
+        // console.log(`${echoesScore} ${echoesTotal.length}`)
+
         if (unit.isFound && unit.game === "Shadow Dragon" && shadowDragonScore === shadowDragonTotal) {
-            gameBorder[0].classList.add("complete");
+            gameElements[0].classList.add("complete");
         } else if (unit.isFound && unit.game === "Echoes: Shadows of Valentia" && echoesScore === echoesTotal) {
-            gameBorder[1].classList.add("complete");
+            gameElements[1].classList.add("complete");
         } else if (unit.isFound && unit.game === "New Mystery of the Emblem" && newMysteryScore === newMysteryTotal) {
             gameElements[2].classList.add("complete");
         } else if (unit.isFound && unit.game === "Genealogy of the Holy War" && genealogyScore === genealogyTotal) {
@@ -255,19 +258,19 @@ function createGame() {
     });
 
     // Get total number of character per game
-    shadowDragonTotal = document.querySelectorAll(".fe1");
-    echoesTotal = document.querySelectorAll(".fe2");
-    newMysteryTotal = document.querySelectorAll(".fe3");
-    genealogyTotal = document.querySelectorAll(".fe4");
-    thraciaTotal = document.querySelectorAll(".fe5");
-    bindingBladeTotal = document.querySelectorAll(".fe6");
-    blazingBladeTotal = document.querySelectorAll(".fe7");
-    sacredStonesTotal = document.querySelectorAll(".fe8");
-    pathOfRadianceTotal = document.querySelectorAll(".fe9");
-    radiantDawnTotal = document.querySelectorAll(".fe10");
-    awakeningTotal = document.querySelectorAll(".fe11");
-    fatesTotal = document.querySelectorAll(".fe12");
-    threeHousesTotal = document.querySelectorAll(".fe13");
+    shadowDragonTotal = document.querySelectorAll(".fe1").length;
+    echoesTotal = document.querySelectorAll(".fe2").length;
+    newMysteryTotal = document.querySelectorAll(".fe3").length;
+    genealogyTotal = document.querySelectorAll(".fe4").length;
+    thraciaTotal = document.querySelectorAll(".fe5").length;
+    bindingBladeTotal = document.querySelectorAll(".fe6").length;
+    blazingBladeTotal = document.querySelectorAll(".fe7").length;
+    sacredStonesTotal = document.querySelectorAll(".fe8").length;
+    pathOfRadianceTotal = document.querySelectorAll(".fe9").length;
+    radiantDawnTotal = document.querySelectorAll(".fe10").length;
+    awakeningTotal = document.querySelectorAll(".fe11").length;
+    fatesTotal = document.querySelectorAll(".fe12").length;
+    threeHousesTotal = document.querySelectorAll(".fe13").length;
 
     gameElements = document.querySelectorAll(".game");
     gameBorder = [...gameElements];
