@@ -65,6 +65,22 @@ button:hover {
     justify-content: center;
 }
 
+#start-container {
+    grid-column: span 3;
+    justify-self: center;
+}
+
+#game-board {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px;
+}
+
 img {
     margin: 10px;
     border-radius: 30%;
