@@ -145,16 +145,33 @@ function checkGuess(guess) {
 window.checkGuess = checkGuess;
 
 function changeImg() {
-    console.log("changeImg loaded");
+
+    setInterval(() => {
+        units.map((unit, index) => {
+            if (unit.getAttribute("src") === characters[index].img1
+                && characters[index].isFound
+                && characters[index].hasOwnProperty("img2")) {
+                    unit.setAttribute("src", characters[index].img2);
+            } else if (unit.getAttribute("src") === characters[index].img2 
+                && characters[index].isFound
+                && characters[index].hasOwnProperty("img3")) {
+                    unit.setAttribute("src", characters[index].img3);
+            }  else if (unit.getAttribute("src") === characters[index].img3
+                && characters[index].isFound
+                && characters[index].hasOwnProperty("img4")) {
+                    unit.setAttribute("src", characters[index].img4);
+            }  else if (unit.getAttribute("src") !== characters[index].img1
+                && characters[index].isFound) {
+                unit.setAttribute("src", characters[index].img1);
+            }
+        })
+    }, timeInterval);
 }
 
-// window.changeImg = changeImg;
-window.addEventListener("DOMContentLoaded", changeImg);
+window.changeImg = changeImg;
 
 function highlightGame() {
     characters.map((unit) => {
-
-        // console.log(`${echoesScore} ${echoesTotal.length}`)
 
         if (unit.isFound && unit.game === "Shadow Dragon" && shadowDragonScore === shadowDragonTotal) {
             gameElements[0].classList.add("complete");
