@@ -4,6 +4,13 @@ import FE3Units from './characters/fe3Units.js';
 import FE4Units from './characters/fe4Units.js';
 import FE5Units from './characters/fe5Units.js';
 import FE6Units from './characters/fe6Units.js';
+import FE7Units from './characters/fe7Units.js';
+import FE8Units from './characters/fe8Units.js';
+import FE9Units from './characters/fe9Units.js';
+import FE10Units from './characters/fe10Units.js';
+import FE13Units from './characters/fe13Units.js';
+import FE14Units from './characters/fe14Units.js';
+import FE16Units from './characters/fe16Units.js';
 
 const unitList = document.querySelectorAll(".unit");
 const units = [...unitList];
@@ -68,7 +75,14 @@ const characters = [
     ...FE3Units,
     ...FE4Units,
     ...FE5Units,
-    ...FE6Units
+    ...FE6Units,
+    ...FE7Units,
+    ...FE8Units,
+    ...FE9Units,
+    ...FE10Units,
+    ...FE13Units,
+    ...FE14Units,
+    ...FE16Units
 ];
 
 const totalCount = characters.length;

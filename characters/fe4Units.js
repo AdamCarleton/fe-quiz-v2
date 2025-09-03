@@ -8,6 +8,14 @@ const FE4Units = [
         game: "Genealogy of the Holy War",
         img1: `${genealogy}sigurd.png`,
         isFound: false
+    },
+    {
+        name: "Seliph",
+        startingClass: "Lord",
+        moveType: "Cavalry",
+        game: "Genealogy of the Holy War",
+        img1: `${genealogy}seliph.png`,
+        isFound: false
     }
 ];
 
