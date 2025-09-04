@@ -8,6 +8,7 @@ const FE2Units = [
         game: "Echoes: Shadows of Valentia",
         img1: `${echoes}alm.png`,
         img2: `${echoes}alm2.png`,
+        img3: `${echoes}alm3.png`,
         isFound: false
     },
     {
@@ -17,6 +18,7 @@ const FE2Units = [
         game: "Echoes: Shadows of Valentia",
         img1: `${echoes}celica.png`,
         img2: `${echoes}celica2.png`,
+        img3: `${echoes}celica3.png`,
         isFound: false
     }
 ];
