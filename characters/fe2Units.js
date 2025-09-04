@@ -10,6 +10,15 @@ const FE2Units = [
         img2: `${echoes}alm2.png`,
         isFound: false
     },
+    {
+        name: "Celica",
+        startingClass: "Priestess",
+        moveType: "Infantry",
+        game: "Echoes: Shadows of Valentia",
+        img1: `${echoes}celica.png`,
+        img2: `${echoes}celica2.png`,
+        isFound: false
+    }
 ];
 
 export default FE2Units;
