@@ -369,6 +369,9 @@ function playAgain() {
         unit.classList.remove("found");
         characters[index].isFound = false;
         unit.setAttribute("src", "./images/FE_Logo.png");
+        if (characters[index].hasOwnProperty("isDLC")){
+            unit.setAttribute("src", "./images/FE_Logo_orange.png");
+        }
     });
 
     // remove names
