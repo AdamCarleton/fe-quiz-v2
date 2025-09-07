@@ -383,6 +383,298 @@ const FE3Units = [
         img2: `${newMystery}arlen2.png`,
         isFound: false
     },
+    {
+        name: "Dice",
+        startingClass: "Fighter",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}dice.png`,
+        isFound: false
+    },
+    {
+        name: "Malice",
+        startingClass: "Myrmidon",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}malice.png`,
+        isFound: false
+    },
+    {
+        name: "Horace",
+        startingClass: "General",
+        moveType: "Armor",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}horace.png`,
+        isFound: false
+    },
+    {
+        name: "Jake",
+        startingClass: "Ballistician",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}jake.png`,
+        isFound: false
+    },
+    {
+        name: "Darros",
+        startingClass: "Pirate",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}darros.png`,
+        isFound: false
+    },
+    {
+        name: "Roberto",
+        startingClass: "Horseman",
+        moveType: "Cavalry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}roberto.png`,
+        isFound: false
+    },
+    {
+        name: "Belf",
+        startingClass: "Cavalier",
+        moveType: "Cavalry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}belf.png`,
+        isFound: false
+    },
+    {
+        name: "Reiden",
+        startingClass: "Cavalier",
+        moveType: "Cavalry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}reiden.png`,
+        isFound: false
+    },
+    {
+        name: "Beck",
+        startingClass: "Ballistician",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}beck.png`,
+        isFound: false
+    },
+    {
+        name: "Athena",
+        startingClass: "Myrmidon",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}athena.png`,
+        isFound: false
+    },
+    {
+        name: "Xane",
+        startingClass: "Chameleon",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}xane.png`,
+        img2: `${newMystery}xane2.png`,
+        isFound: false
+    },
+    {
+        name: "Tiki",
+        startingClass: "Manakete",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}tiki.png`,
+        img2: `${newMystery}tiki2.png`,
+        isFound: false
+    },
+    {
+        name: "Est",
+        startingClass: "Pegasus Knight",
+        moveType: "Flying",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}est.png`,
+        img2: `${newMystery}est2.png`,
+        isFound: false
+    },
+    {
+        name: "Dolph",
+        startingClass: "Knight",
+        moveType: "Armor",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}dolph.png`,
+        img2: `${newMystery}dolph2.png`,
+        isFound: false
+    },
+    {
+        name: "Abel",
+        startingClass: "Cavalier",
+        moveType: "Cavalry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}abel.png`,
+        img2: `${newMystery}abel2.png`,
+        isFound: false
+    },
+    {
+        name: "Macellan",
+        startingClass: "Knight",
+        moveType: "Armor",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}macellan.png`,
+        img2: `${newMystery}macellan2.png`,
+        isFound: false
+    },
+    {
+        name: "Astram",
+        startingClass: "Mercenary",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}astram.png`,
+        img2: `${newMystery}astram2.png`,
+        isFound: false
+    },
+    {
+        name: "Katarina",
+        startingClass: "Mage",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}katarina.png`,
+        isFound: false
+    },
+    {
+        name: "Tomas",
+        startingClass: "Archer",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}tomas.png`,
+        img2: `${newMystery}tomas2.png`,
+        isFound: false
+    },
+    {
+        name: "Sheena",
+        startingClass: "General",
+        moveType: "Armor",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}sheena.png`,
+        img2: `${newMystery}sheena2.png`,
+        isFound: false
+    },
+    {
+        name: "Samson",
+        startingClass: "Hero",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}samson.png`,
+        img2: `${newMystery}samson2.png`,
+        isFound: false
+    },
+    {
+        name: "Frost",
+        startingClass: "Bishop",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}frost.png`,
+        isFound: false
+    },
+    {
+        name: "Roshea",
+        startingClass: "Cavalier",
+        moveType: "Cavalry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}roshea.png`,
+        img2: `${newMystery}roshea2.png`,
+        isFound: false
+    },
+    {
+        name: "Vyland",
+        startingClass: "Cavalier",
+        moveType: "Cavalry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}vyland.png`,
+        img2: `${newMystery}vyland2.png`,
+        isFound: false
+    },
+    {
+        name: "Sedgar",
+        startingClass: "Horseman",
+        moveType: "Cavalry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}sedgar.png`,
+        img2: `${newMystery}sedgar2.png`,
+        isFound: false
+    },
+    {
+        name: "Wolf",
+        startingClass: "Horseman",
+        moveType: "Cavalry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}wolf.png`,
+        img2: `${newMystery}wolf2.png`,
+        isFound: false
+    },
+    {
+        name: "Midia",
+        startingClass: "Paladin",
+        moveType: "Cavalry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}midia.png`,
+        img2: `${newMystery}midia2.png`,
+        isFound: false
+    },
+    {
+        name: "Ymir",
+        startingClass: "Warrior",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}ymir.png`,
+        isFound: false
+    },
+    {
+        name: "Michalis",
+        startingClass: "Draco Knight",
+        moveType: "Flying",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}michalis.png`,
+        img2: `${newMystery}michalis2.png`,
+        isFound: false
+    },
+    {
+        name: "Nagi",
+        startingClass: "Manakete",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}nagi.png`,
+        isFound: false
+    },
+    {
+        name: "Lena",
+        startingClass: "Cleric",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}lena.png`,
+        img2: `${newMystery}lena2.png`,
+        isFound: false
+    },
+    {
+        name: "Nyna",
+        startingClass: "Cleric",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}nyna.png`,
+        img2: `${newMystery}nyna2.png`,
+        isFound: false
+    },
+    {
+        name: "Maria",
+        startingClass: "Cleric",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}maria.png`,
+        img2: `${newMystery}maria2.png`,
+        isFound: false
+    },
+    {
+        name: "Elice",
+        startingClass: "Cleric",
+        moveType: "Infantry",
+        game: "New Mystery of the Emblem",
+        img1: `${newMystery}elice.png`,
+        img2: `${newMystery}elice2.png`,
+        isFound: false
+    },
 ];
 
 export default FE3Units;
