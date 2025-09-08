@@ -273,13 +273,14 @@ function createGame() {
 
                 if (unit.hasOwnProperty("isDLC")) {
                     unitImg.classList.add("dlc");
-                    unitImg.src = "./images/FE_Logo_orange.png";
+                    unitImg.src = "./images/FE_Logo_Orange.png";
                     unitName.classList.add("dlc-name");
                 }
 
                 if (unit.hasOwnProperty("isPostGame")) {
-                    unit.classList.add("post-game");
-                    unitImg.src = "./images/FE_Logo_red.png";
+                    // console.log(unit);
+                    unitImg.classList.add("post-game");
+                    unitImg.src = "./images/FE_Logo_Red.png";
                     unitName.classList.add("post-game-name");
                 }
                 // console.log(titleList);
