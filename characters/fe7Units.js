@@ -13,6 +13,102 @@ const FE7Units = [
         isFound: false
     },
     {
+        name: "Sain",
+        startingClass: "Cavalier",
+        moveType: "Cavalry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}sain.png`,
+        isFound: false
+    },
+    {
+        name: "Kent",
+        startingClass: "Cavalier",
+        moveType: "Cavalry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}kent.png`,
+        isFound: false
+    },
+    {
+        name: "Florina",
+        startingClass: "Pegasus Knight",
+        moveType: "Flying",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}florina.png`,
+        isFound: false
+    },
+    {
+        name: "Wil",
+        startingClass: "Archer",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}wil.png`,
+        isFound: false
+    },
+    {
+        name: "Dorcas",
+        startingClass: "Fighter",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}dorcas.png`,
+        isFound: false
+    },
+    {
+        name: "Serra",
+        startingClass: "Cleric",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}serra.png`,
+        isFound: false
+    },
+    {
+        name: "Erk",
+        startingClass: "Mage",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}erk.png`,
+        isFound: false
+    },
+    {
+        name: "Rath",
+        startingClass: "Nomad",
+        moveType: "Cavalry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}rath.png`,
+        isFound: false
+    },
+    {
+        name: "Matthew",
+        startingClass: "Thief",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}matthew.png`,
+        isFound: false
+    },
+    {
+        name: "Nils",
+        startingClass: "Bard",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}nils.png`,
+        isFound: false
+    },
+    {
+        name: "Lucius",
+        startingClass: "Monk",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}lucius.png`,
+        isFound: false
+    },
+    {
+        name: "Wallace",
+        startingClass: "Knight",
+        moveType: "Armor",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}wallace.png`,
+        isFound: false
+    },
+    {
         name: "Eliwood",
         startingClass: "Lord",
         moveType: "Infantry",
