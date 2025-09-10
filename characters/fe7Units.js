@@ -120,6 +120,38 @@ const FE7Units = [
         isFound: false
     },
     {
+        name: "Marcus",
+        startingClass: "Paladin",
+        moveType: "Cavalry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}marcus.png`,
+        isFound: false
+    },
+    {
+        name: "Lowen",
+        startingClass: "Cavalier",
+        moveType: "Cavalry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}lowen.png`,
+        isFound: false
+    },
+    {
+        name: "Rebecca",
+        startingClass: "Archer",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}rebecca.png`,
+        isFound: false
+    },
+    {
+        name: "Bartre",
+        startingClass: "Fighter",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}bartre.png`,
+        isFound: false
+    },
+    {
         name: "Hector",
         startingClass: "Lord",
         moveType: "Armor",
@@ -129,7 +161,207 @@ const FE7Units = [
         img3: `${blazingBlade}hector3.png`,
         img4: `${blazingBlade}hector4.png`,
         isFound: false
-    }
+    },
+    {
+        name: "Oswin",
+        startingClass: "Knight",
+        moveType: "Armor",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}oswin.png`,
+        isFound: false
+    },
+    {
+        name: "Guy",
+        startingClass: "Myrmidon",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}guy.png`,
+        isFound: false
+    },
+    {
+        name: "Merlinus",
+        startingClass: "Transporter",
+        moveType: "Other",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}merlinus.png`,
+        isFound: false
+    },
+    {
+        name: "Priscilla",
+        startingClass: "Troubadour",
+        moveType: "Cavalry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}priscilla.png`,
+        isFound: false
+    },
+    {
+        name: "Raven",
+        startingClass: "Mercenary",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}raven.png`,
+        isFound: false
+    },
+    {
+        name: "Canas",
+        startingClass: "Shaman",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}canas.png`,
+        isFound: false
+    },
+    {
+        name: "Dart",
+        startingClass: "Pirate",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}dart.png`,
+        isFound: false
+    },
+    {
+        name: "Fiora",
+        startingClass: "Pegasus Knight",
+        moveType: "Flying",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}fiora.png`,
+        isFound: false
+    },
+    {
+        name: "Legault",
+        startingClass: "Thief",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}legault.png`,
+        isFound: false
+    },
+    {
+        name: "Ninian",
+        startingClass: "Dancer",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}ninian.png`,
+        isFound: false
+    },
+    {
+        name: "Isadora",
+        startingClass: "Paladin",
+        moveType: "Cavalry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}isadora.png`,
+        isFound: false
+    },
+    {
+        name: "Heath",
+        startingClass: "Wyvern Rider",
+        moveType: "Flying",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}heath.png`,
+        isFound: false
+    },
+    {
+        name: "Hawkeye",
+        startingClass: "Berserker",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}hawkeye.png`,
+        isFound: false
+    },
+    {
+        name: "Geitz",
+        startingClass: "Warrior",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}geitz.png`,
+        isFound: false
+    },
+    {
+        name: "Pent",
+        startingClass: "Sage",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}pent.png`,
+        isFound: false
+    },
+    {
+        name: "Louise",
+        startingClass: "Sniper",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}louise.png`,
+        isFound: false
+    },
+    {
+        name: "Karel",
+        startingClass: "Swordmaster",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}karel.png`,
+        isFound: false
+    },
+    {
+        name: "Harken",
+        startingClass: "Hero",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}harken.png`,
+        isFound: false
+    },
+    {
+        name: "Nino",
+        startingClass: "Mage",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}nino.png`,
+        isFound: false
+    },
+    {
+        name: "Jaffar",
+        startingClass: "Assassin",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}jaffar.png`,
+        isFound: false
+    },
+    {
+        name: "Vaida",
+        startingClass: "Wyvern Lord",
+        moveType: "Flying",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}vaida.png`,
+        isFound: false
+    },
+    {
+        name: "Renault",
+        startingClass: "Bishop",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}renault.png`,
+        isFound: false
+    },
+    {
+        name: "Athos",
+        startingClass: "Archsage",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}athos.png`,
+        isFound: false
+    },
+    {
+        name: "Farina",
+        startingClass: "Pegasus Knight",
+        moveType: "Flying",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}farina.png`,
+        isFound: false
+    },
+    {
+        name: "Karla",
+        startingClass: "Swordmaster",
+        moveType: "Infantry",
+        game: "Blazing Blade",
+        img1: `${blazingBlade}karla.png`,
+        isFound: false
+    },
 ]
 
 export default FE7Units;
