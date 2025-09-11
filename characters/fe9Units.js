@@ -128,7 +128,7 @@ const FE9Units = [
         moveType: "Infantry",
         game: "Path of Radiance",
         img1: `${pathOfRadiance}volke.png`,
-        img1: `${pathOfRadiance}volke2.png`,
+        img2: `${pathOfRadiance}volke2.png`,
         isFound: false
     },
     {
