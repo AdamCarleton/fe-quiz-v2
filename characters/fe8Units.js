@@ -264,7 +264,7 @@ const FE8Units = [
     {
         name: "Myrrh",
         startingClass: "Manakete",
-        moveType: "Infantry",
+        moveType: "Dragon",
         game: "Sacred Stones",
         img1: `${sacredStones}myrrh.png`,
         isFound: false

@@ -325,7 +325,7 @@ const FE3Units = [
     {
         name: "Bantu",
         startingClass: "Manakete",
-        moveType: "Infantry",
+        moveType: "Dragon",
         game: "New Mystery of the Emblem",
         img1: `${newMystery}bantu.png`,
         img2: `${newMystery}bantu2.png`,
@@ -475,7 +475,7 @@ const FE3Units = [
     {
         name: "Tiki",
         startingClass: "Manakete",
-        moveType: "Infantry",
+        moveType: "Dragon",
         game: "New Mystery of the Emblem",
         img1: `${newMystery}tiki.png`,
         img2: `${newMystery}tiki2.png`,
@@ -634,7 +634,7 @@ const FE3Units = [
     {
         name: "Nagi",
         startingClass: "Manakete",
-        moveType: "Infantry",
+        moveType: "Dragon",
         game: "New Mystery of the Emblem",
         img1: `${newMystery}nagi.png`,
         isFound: false

@@ -262,7 +262,7 @@ const FE1Units = [
     {
         name: "Bantu",
         startingClass: "Manakete",
-        moveType: "Infantry",
+        moveType: "Dragon",
         game: "Shadow Dragon",
         img1: `${shadowDragon}bantu.png`,
         img2: `${shadowDragon}bantu2.png`,
@@ -476,7 +476,7 @@ const FE1Units = [
     {
         name: "Tiki",
         startingClass: "Manakete",
-        moveType: "Infantry",
+        moveType: "Dragon",
         game: "Shadow Dragon",
         img1: `${shadowDragon}tiki.png`,
         img2: `${shadowDragon}tiki2.png`,
@@ -511,7 +511,7 @@ const FE1Units = [
     {
         name: "Nagi",
         startingClass: "Manakete",
-        moveType: "Infantry",
+        moveType: "Dragon",
         game: "Shadow Dragon",
         img1: `${shadowDragon}nagi.png`,
         isFound: false

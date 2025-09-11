@@ -363,8 +363,8 @@ const FE6Units = [
     },
     {
         name: "Fae",
-        startingClass: "manakete",
-        moveType: "Infantry",
+        startingClass: "Manakete",
+        moveType: "Dragon",
         game: "Binding Blade",
         img1: `${bindingBlade}fae.png`,
         isFound: false
