@@ -52,7 +52,7 @@ const FE6Units = [
     {
         name: "Merlinus",
         startingClass: "Transporter",
-        moveType: "Other",
+        moveType: "Cavalry",
         game: "Binding Blade",
         img1: `${bindingBlade}merlinus.png`,
         isFound: false
@@ -164,7 +164,7 @@ const FE6Units = [
     {
         name: "Trec",
         startingClass: "Cavalier",
-        moveType: "Calvary",
+        moveType: "Cavalry",
         game: "Binding Blade",
         img1: `${bindingBlade}trec.png`,
         isFound: false
@@ -204,7 +204,7 @@ const FE6Units = [
     {
         name: "Barthe",
         startingClass: "Knight",
-        moveType: "Armory",
+        moveType: "Armor",
         game: "Binding Blade",
         img1: `${bindingBlade}barthe.png`,
         isFound: false

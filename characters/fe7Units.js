@@ -181,7 +181,7 @@ const FE7Units = [
     {
         name: "Merlinus",
         startingClass: "Transporter",
-        moveType: "Other",
+        moveType: "Cavalry",
         game: "Blazing Blade",
         img1: `${blazingBlade}merlinus.png`,
         isFound: false

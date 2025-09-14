@@ -352,7 +352,7 @@ const FE1Units = [
     {
         name: "Dolph",
         startingClass: "Knight",
-        moveType: "Armored",
+        moveType: "Armor",
         game: "Shadow Dragon",
         img1: `${shadowDragon}dolph.png`,
         img2: `${shadowDragon}dolph2.png`,
@@ -361,7 +361,7 @@ const FE1Units = [
     {
         name: "Macellan",
         startingClass: "Knight",
-        moveType: "Armored",
+        moveType: "Armor",
         game: "Shadow Dragon",
         img1: `${shadowDragon}macellan.png`,
         img2: `${shadowDragon}macellan2.png`,

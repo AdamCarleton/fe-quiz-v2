@@ -204,7 +204,7 @@ const FE5Units = [
     {
         name: "Robert",
         startingClass: "Arch Knight",
-        moveType: "Cavalier",
+        moveType: "Cavalry",
         game: "Thracia 776",
         img1: `${thracia}robert.png`,
         isFound: false
@@ -212,7 +212,7 @@ const FE5Units = [
     {
         name: "Fred",
         startingClass: "Paladin",
-        moveType: "Cavalier",
+        moveType: "Cavalry",
         game: "Thracia 776",
         img1: `${thracia}fred.png`,
         isFound: false

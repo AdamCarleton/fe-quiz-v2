@@ -273,7 +273,7 @@ const FE10Units = [
     {
         name: "Makalov",
         startingClass: "Sword Paladin",
-        moveType: "Cavalier",
+        moveType: "Cavalry",
         game: "Radiant Dawn",
         img1: `${radiantDawn}makalov.png`,
         isFound: false

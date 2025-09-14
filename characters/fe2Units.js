@@ -149,7 +149,7 @@ const FE2Units = [
     {
         name: "Valbar",
         startingClass: "Knight",
-        moveType: "Armored",
+        moveType: "Armor",
         game: "Echoes: Shadows of Valentia",
         img1: `${echoes}valbar.png`,
         img2: `${echoes}valbar2.png`,
@@ -293,7 +293,7 @@ const FE2Units = [
     {
         name: "Conrad",
         startingClass: "Paladin",
-        moveType: "Calvary",
+        moveType: "Cavalry",
         game: "Echoes: Shadows of Valentia",
         img1: `${echoes}conrad.png`,
         img2: `${echoes}conrad2.png`,
@@ -311,7 +311,7 @@ const FE2Units = [
     {
         name: "Fernand",
         startingClass: "Cavalier",
-        moveType: "Calvary",
+        moveType: "Cavalry",
         game: "Echoes: Shadows of Valentia",
         img1: `${echoes}fernand.png`,
         isFound: false,
