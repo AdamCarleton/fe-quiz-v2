@@ -3,7 +3,7 @@ import { threeHouses } from "../public/Paths.js";
 const FE16Units = [
     {
         name: "Byleth",
-        startingClass: "Professor",
+        startingClass: "Commoner",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}byleth.png`,
@@ -14,7 +14,7 @@ const FE16Units = [
     },
     {
         name: "Edelgard",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}edelgard.png`,
@@ -23,7 +23,7 @@ const FE16Units = [
     },
     {
         name: "Hubert",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}hubert.png`,
@@ -32,7 +32,7 @@ const FE16Units = [
     },
     {
         name: "Bernadetta",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}bernadetta.png`,
@@ -41,7 +41,7 @@ const FE16Units = [
     },
     {
         name: "Ferdinand",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}ferdinand.png`,
@@ -50,7 +50,7 @@ const FE16Units = [
     },
     {
         name: "Dorothea",
-        startingClass: "Student",
+        startingClass: "Commoner",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}dorothea.png`,
@@ -59,7 +59,7 @@ const FE16Units = [
     },
     {
         name: "Caspar",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}caspar.png`,
@@ -68,7 +68,7 @@ const FE16Units = [
     },
     {
         name: "Petra",
-        startingClass: "Student",
+        startingClass: "Commoner",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}petra.png`,
@@ -77,7 +77,7 @@ const FE16Units = [
     },
     {
         name: "Linhardt",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}linhardt.png`,
@@ -86,7 +86,7 @@ const FE16Units = [
     },
     {
         name: "Claude",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}claude.png`,
@@ -95,7 +95,7 @@ const FE16Units = [
     },
     {
         name: "Hilda",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}hilda.png`,
@@ -104,7 +104,7 @@ const FE16Units = [
     },
     {
         name: "Lorenz",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}lorenz.png`,
@@ -113,7 +113,7 @@ const FE16Units = [
     },
     {
         name: "Raphael",
-        startingClass: "Student",
+        startingClass: "Commoner",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}raphael.png`,
@@ -122,7 +122,7 @@ const FE16Units = [
     },
     {
         name: "Lysithea",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}lysithea.png`,
@@ -131,7 +131,7 @@ const FE16Units = [
     },
     {
         name: "Ignatz",
-        startingClass: "Student",
+        startingClass: "Commoner",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}ignatz.png`,
@@ -140,7 +140,7 @@ const FE16Units = [
     },
     {
         name: "Marianne",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}marianne.png`,
@@ -149,7 +149,7 @@ const FE16Units = [
     },
     {
         name: "Leonie",
-        startingClass: "Student",
+        startingClass: "Commoner",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}leonie.png`,
@@ -158,7 +158,7 @@ const FE16Units = [
     },
     {
         name: "Dimitri",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}dimitri.png`,
@@ -168,7 +168,7 @@ const FE16Units = [
     },
     {
         name: "Dedue",
-        startingClass: "Student",
+        startingClass: "Commoner",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}dedue.png`,
@@ -177,7 +177,7 @@ const FE16Units = [
     },
     {
         name: "Felix",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}felix.png`,
@@ -186,7 +186,7 @@ const FE16Units = [
     },
     {
         name: "Mercedes",
-        startingClass: "Student",
+        startingClass: "Commoner",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}mercedes.png`,
@@ -195,7 +195,7 @@ const FE16Units = [
     },
     {
         name: "Ashe",
-        startingClass: "Student",
+        startingClass: "Commoner",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}ashe.png`,
@@ -204,7 +204,7 @@ const FE16Units = [
     },
     {
         name: "Annette",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}annette.png`,
@@ -213,7 +213,7 @@ const FE16Units = [
     },
     {
         name: "Sylvain",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}sylvain.png`,
@@ -222,7 +222,7 @@ const FE16Units = [
     },
     {
         name: "Ingrid",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}ingrid.png`,
@@ -239,7 +239,7 @@ const FE16Units = [
     },
     {
         name: "Manuela",
-        startingClass: "Student",
+        startingClass: "Mage",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}manuela.png`,
@@ -247,8 +247,8 @@ const FE16Units = [
     },
     {
         name: "Gilbert",
-        startingClass: "General",
-        moveType: "Infantry",
+        startingClass: "Fortress Knight",
+        moveType: "Armor",
         game: "Three Houses",
         img1: `${threeHouses}gilbert.png`,
         isFound: false
@@ -263,7 +263,7 @@ const FE16Units = [
     },
     {
         name: "Alois",
-        startingClass: "Student",
+        startingClass: "Warrior",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}alois.png`,
@@ -271,7 +271,7 @@ const FE16Units = [
     },
     {
         name: "Shamir",
-        startingClass: "Student",
+        startingClass: "Sniper",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}shamir.png`,
@@ -279,15 +279,15 @@ const FE16Units = [
     },
     {
         name: "Seteth",
-        startingClass: "Student",
-        moveType: "Infantry",
+        startingClass: "Wyvern Rider",
+        moveType: "Flying",
         game: "Three Houses",
         img1: `${threeHouses}seteth.png`,
         isFound: false
     },
     {
         name: "Flayn",
-        startingClass: "Student",
+        startingClass: "Priest",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}flayn.png`,
@@ -295,7 +295,7 @@ const FE16Units = [
     },
     {
         name: "Cyril",
-        startingClass: "Student",
+        startingClass: "Commoner",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}cyril.png`,
@@ -304,7 +304,7 @@ const FE16Units = [
     },
     {
         name: "Yuri",
-        startingClass: "Student",
+        startingClass: "Commoner",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}yuri.png`,
@@ -313,7 +313,7 @@ const FE16Units = [
     },
     {
         name: "Balthus",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}balthus.png`,
@@ -322,7 +322,7 @@ const FE16Units = [
     },
     {
         name: "Constance",
-        startingClass: "Student",
+        startingClass: "Noble",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}constance.png`,
@@ -331,7 +331,7 @@ const FE16Units = [
     },
     {
         name: "Hapi",
-        startingClass: "Student",
+        startingClass: "Commoner",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}hapi.png`,
@@ -340,8 +340,8 @@ const FE16Units = [
     },
     {
         name: "Jeritza",
-        startingClass: "Student",
-        moveType: "Infantry",
+        startingClass: "Death Knight",
+        moveType: "Cavalry",
         game: "Three Houses",
         img1: `${threeHouses}jeritza.png`,
         isFound: false,
@@ -349,7 +349,7 @@ const FE16Units = [
     },
     {
         name: "Anna",
-        startingClass: "Student",
+        startingClass: "Myrmidon",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}anna.png`,
@@ -358,7 +358,7 @@ const FE16Units = [
     },
     {
         name: "Aelfric",
-        startingClass: "Student",
+        startingClass: "Monk",
         moveType: "Infantry",
         game: "Three Houses",
         img1: `${threeHouses}aelfric.png`,
