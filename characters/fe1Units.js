@@ -485,7 +485,7 @@ const FE1Units = [
     {
         name: "Lorenz",
         startingClass: "General",
-        moveType: "Armored",
+        moveType: "Armor",
         game: "Shadow Dragon",
         img1: `${shadowDragon}lorenz.png`,
         img2: `${shadowDragon}lorenz2.png`,

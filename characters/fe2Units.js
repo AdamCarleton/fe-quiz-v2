@@ -93,8 +93,8 @@ const FE2Units = [
     },
     {
         name: "Python",
-        startingClass: "Horseman",
-        moveType: "Cavalry",
+        startingClass: "Archer",
+        moveType: "Infantry",
         game: "Echoes: Shadows of Valentia",
         img1: `${echoes}python.png`,
         img2: `${echoes}python2.png`,
