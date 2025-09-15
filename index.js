@@ -369,7 +369,12 @@ function quit() {
             names[index].classList.add("missed-name");
         }
         units[index].setAttribute("src", unit.img1);
-        names[index].innerHTML = unit.name;
+        if (units[index].hasOwnProperty("displayName")) {
+            names[index].innerHTML = unit.displayName;
+        } else {
+            names[index].innerHTML = unit.name;
+        }
+        
     });
 }
 
