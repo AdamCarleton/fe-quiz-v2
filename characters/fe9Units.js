@@ -278,7 +278,7 @@ const FE9Units = [
     {
         name: "Haar",
         startingClass: "Wyvern Lord",
-        moveType: "Infantry",
+        moveType: "Flying",
         game: "Path of Radiance",
         img1: `${pathOfRadiance}haar.png`,
         isFound: false
