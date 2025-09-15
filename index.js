@@ -96,6 +96,7 @@ function checkGuess(guess) {
     const inputElement = document.querySelector(".guess");
     const inputValue = inputElement.value;
     let storedString = inputValue.toLowerCase();
+    let displayName;
 
     const currentDate = new Date();
     const currentSeconds = currentDate.getSeconds();
@@ -152,7 +153,12 @@ function checkGuess(guess) {
             characters[index].isFound = true;
             unit.classList.add("found"); // to count score easier
             playerScore = document.querySelectorAll(".found").length;
-            names[index].innerHTML = characters[index].name;
+            if (characters[index].hasOwnProperty("displayName")) {
+                names[index].innerHTML = characters[index].displayName;
+            } else {
+                names[index].innerHTML = characters[index].name;
+            }
+            
         }
     });
     inputElement.value = "";
@@ -268,7 +274,7 @@ function createGame() {
                 unitName.classList.add("name");
                 const unitImg = document.createElement("img");
                 unitImg.classList.add("portrait");
-                unitImg.src = "./images/FE_Logo.png";
+                unitImg.src = "./images/FE_Logo_Yellow.png";
                 unitImg.id = unit.name.toLowerCase();
 
                 if (unit.hasOwnProperty("isDLC")) {
@@ -318,6 +324,36 @@ function createGame() {
 
 // window.createGame = createGame;
 startButton.addEventListener("click", createGame);
+
+let hintCreated = false;
+
+function movementHint() {
+
+    if (hintCreated) return;
+
+    const portrait = document.querySelectorAll(".portrait");
+
+    characters.map((unit, index) => {
+        // console.log(unit);
+        if (unit.moveType === "Infantry" && !unit.isFound) {
+            portrait[index].src = "./images/infantry.png";
+        } else if (unit.moveType === "Armor" && !unit.isFound) {
+            portrait[index].src = "./images/armor.png";
+        } else if (unit.moveType === "Flying" && !unit.isFound) {
+            portrait[index].src = "./images/flying.png";
+        } else if (unit.moveType === "Cavalry" && !unit.isFound) {
+            portrait[index].src = "./images/cavalry.png";
+        } else if (unit.moveType === "Beast" && !unit.isFound) {
+            portrait[index].src = "./images/beast.png";
+        } else if (unit.moveType === "Dragon" && !unit.isFound) {
+            portrait[index].src = "./images/dragon.png";
+        }
+    });
+
+    hintCreated = true;
+}
+
+window.movementHint = movementHint;
 
 function checkWin() {
    if (playerScore === totalCount && gaveUp === false) {
