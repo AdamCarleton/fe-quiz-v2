@@ -133,6 +133,10 @@ img {
     margin: 5px;
 }
 
+.alphabet-grid {
+    grid-template-columns: repeat(26, 1fr);
+}
+
 .hide {
     visibility: hidden;
 }

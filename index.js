@@ -325,6 +325,71 @@ function createGame() {
 // window.createGame = createGame;
 startButton.addEventListener("click", createGame);
 
+const alphaButton = document.getElementById("alphabet");
+
+function alphabetQuiz() {
+    const orderedCharacters = characters.sort((a,b) => a.name.localeCompare(b.name));
+    if (contentGenerated) return;
+    // Removes button from game-board
+    startContainer.remove();
+
+    const gameDiv = document.createElement("div");
+    gameDiv.classList.add("game");
+    gameDiv.classList.add("alphabet-grid");
+    const gameTitle = document.createElement("p");
+    gameTitle.classList.add("game-title");
+    gameTitle.innerHTML = "Alphabet Order";
+    gameDiv.appendChild(gameTitle);
+    gameBoard.appendChild(gameDiv);
+
+    // get newly created game div and p-title elements
+    const gameList = document.querySelectorAll(".game");
+    const gameArray = [...gameList];
+
+    // Loop through each game, adding characters with matching game key
+    gameArray.map((game, i) => {
+        orderedCharacters.map((unit, index) => {
+            const newUnit = document.createElement("div");
+            newUnit.classList.add("character");
+            const unitName = document.createElement("p");
+            unitName.classList.add("name");
+            const unitImg = document.createElement("img");
+            unitImg.classList.add("unit");
+            unitImg.src = "./images/FE_Logo_Yellow.png";
+            unitImg.id = unit.name.toLowerCase();
+
+            if (unit.hasOwnProperty("isDLC")) {
+                unitImg.classList.add("dlc");
+                unitImg.src = "./images/FE_Logo_Orange.png";
+                unitName.classList.add("dlc-name");
+            }
+
+            if (unit.hasOwnProperty("isPostGame")) {
+                unitImg.classList.add("post-game");
+                unitImg.src = "./images/FE_Logo_Red.png";
+                unitName.classList.add("post-game-name");
+            }
+
+            unitImg.classList.add(`fe${i+1}`);
+            // unitImg.id = unit.name.toLowerCase();
+            newUnit.appendChild(unitName);
+            newUnit.appendChild(unitImg);
+            gameList[i].appendChild(newUnit);
+            units.push(unitImg);
+            names.push(unitName);
+        });
+    });
+
+    gameElements = document.querySelectorAll(".game");
+    gameBorder = [...gameElements];
+
+    contentGenerated = true;
+}
+
+alphaButton.addEventListener("click", alphabetQuiz);
+
+
+
 let hintCreated = false;
 
 function movementHint() {
