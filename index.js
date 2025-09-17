@@ -354,7 +354,7 @@ function alphabetQuiz() {
             const unitName = document.createElement("p");
             unitName.classList.add("name");
             const unitImg = document.createElement("img");
-            unitImg.classList.add("unit");
+            unitImg.classList.add("portrait");
             unitImg.src = "./images/FE_Logo_Yellow.png";
             unitImg.id = unit.name.toLowerCase();
 
