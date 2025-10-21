@@ -2,6 +2,7 @@
 * {
     --darkblue: #0F1B30;
     --lightblue: #324168;
+    --highlightblue: #3d60b8;
     --yellow: #FFE6C2;
     --orange: #CE543C;
     --red: #8D1B13;
@@ -159,6 +160,15 @@ img {
 
 .post-game-name {
     color: var(--red);
+}
+
+.found {
+    transition: 0.3s;
+}
+
+.found:hover {
+    transform: scale(1.3);
+    background-color: var(--highlightblue);
 }
 
 .win-container {
