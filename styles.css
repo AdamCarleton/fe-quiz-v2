@@ -68,17 +68,25 @@ button:hover {
 }
 
 #start-container {
-    grid-column: span 3;
-    justify-self: center;
+    /* grid-column: span 3; */
+    width: 100%;
+    display: flex;
+    justify-self: space-evenly;
 }
 
 #game-board {
     width: 90%;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    justify-content: center;
+    /* height: auto; */
+    /* JUST DELETE ALL FLEX STYLING TO GO BACK TO OLD LOOK */
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* grid-template-rows: auto; */
+    /* justify-content: center; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-between;
     gap: 10px;
     margin: 5px;
 }
@@ -87,11 +95,6 @@ img {
     margin: 10px;
     border-radius: 30%;
     background-color: var(--lightblue);
-}
-
-.character {
-    margin: 1px;
-    text-align: center;
 }
 
 .character > img {
@@ -120,6 +123,8 @@ img {
 .game {
     position: relative;
     top: 50px;
+    width: 32%;
+    height: auto;
     /* display: grid; */
     /* grid-template-columns: repeat(7, 1fr); */
     /* grid-template-rows:  auto; */
@@ -127,16 +132,19 @@ img {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: space-evenly;
-    /* justify-content: space-evenly; */
     align-content: flex-start;
     border: 2px solid var(--lightblue);
     border-radius: 5px;
-    /* height: 100%; */
+    height: 100%;
 }
 
 .game .character {
     margin-right: 0.5rem;
 }
+
+/* .game:nth-of-type(2), .game:nth-of-type(1) {
+    align-self: flex-end;
+} */
 
 .game-title {
     color: var(--yellow);
@@ -158,17 +166,17 @@ img {
     border: 2px solid var(--yellow);
 }
 
-.dlc {
+/* .dlc {
     border: 1px solid var(--orange);
-}
+} */
 
 .dlc-name {
     color: var(--orange);
 }
 
-.post-game {
+/* .post-game {
     border: 1px solid var(--red);
-}
+} */
 
 .post-game-name {
     color: var(--red);
@@ -231,6 +239,10 @@ footer {
 #move-type {
     margin: 10px;
     height: 30px;
+}
+
+.character:has(#blackknight) p {
+    font-size: 10px;
 }
 
 @media (max-width: 1200px) and (min-width: 951px) {
