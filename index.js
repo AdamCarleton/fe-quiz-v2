@@ -101,7 +101,7 @@ function checkGuess(guess) {
     const currentDate = new Date();
     const currentSeconds = currentDate.getSeconds();
 
-    units.map((unit, index) => {
+    units.forEach((unit, index) => {
         if (storedString === units[index].id && !characters[index].isFound) {
             unit.setAttribute("src", characters[index].img1);
 
@@ -174,7 +174,7 @@ window.checkGuess = checkGuess;
 function changeImg() {
 
     setInterval(() => {
-        units.map((unit, index) => {
+        units.forEach((unit, index) => {
             if (unit.getAttribute("src") === characters[index].img1
                 && characters[index].isFound
                 && characters[index].hasOwnProperty("img2")) {
@@ -198,7 +198,7 @@ function changeImg() {
 window.changeImg = changeImg;
 
 function highlightGame() {
-    characters.map((unit) => {
+    characters.forEach((unit) => {
 
         if (unit.isFound && unit.game === "Shadow Dragon" && shadowDragonScore === shadowDragonTotal) {
             gameElements[0].classList.add("complete");
@@ -261,9 +261,9 @@ function createGame() {
     const titleArray = [...titleList];
 
     // Loop through each game, adding characters with matching game key/value
-    gameArray.map((game, i) => {
+    gameArray.forEach((game, i) => {
         // console.log(`${titleArray[i].textContent} ${i}`);
-        characters.map((unit, index) => {
+        characters.forEach((unit, index) => {
             // console.log(unit.game);
             // console.log(titleArray[i].textContent);
 
@@ -347,8 +347,8 @@ function alphabetQuiz() {
     const gameArray = [...gameList];
 
     // Loop through each game, adding characters with matching game key
-    gameArray.map((game, i) => {
-        orderedCharacters.map((unit, index) => {
+    gameArray.forEach((game, i) => {
+        orderedCharacters.forEach((unit, index) => {
             const newUnit = document.createElement("div");
             newUnit.classList.add("character");
             const unitName = document.createElement("p");
@@ -398,7 +398,7 @@ function movementHint() {
 
     const portrait = document.querySelectorAll(".portrait");
 
-    characters.map((unit, index) => {
+    characters.forEach((unit, index) => {
         // console.log(unit);
         if (unit.moveType === "Infantry" && !unit.isFound) {
             portrait[index].src = "./images/infantry.png";
@@ -428,7 +428,7 @@ function checkWin() {
 }
 
 function quit() {
-    characters.map((unit, index) => {
+    characters.forEach((unit, index) => {
         if (unit.isFound === false) {
             units[index].classList.add("missed-border");
             names[index].classList.add("missed-name");
@@ -462,7 +462,7 @@ function playAgain() {
     threeHousesScore = 0;
 
     // remove highlighted border
-    gameBorder.map((element) => {
+    gameBorder.forEach((element) => {
         element.classList.remove("complete");
     })
 
@@ -472,7 +472,7 @@ function playAgain() {
     score.innerHTML = `${playerScore} / ${characters.length}`;
 
     // loop through units replacing picture and setting not found
-    units.map((unit, index) => {
+    units.forEach((unit, index) => {
         unit.classList.remove("found");
         characters[index].isFound = false;
         unit.setAttribute("src", "./images/FE_Logo.png");
@@ -482,7 +482,7 @@ function playAgain() {
     });
 
     // remove names
-    names.map((name) => {
+    names.forEach((name) => {
         name.innerHTML = "";
     })
 }
