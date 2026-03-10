@@ -155,7 +155,9 @@ img {
 }
 
 .alphabet-grid {
-    grid-template-columns: repeat(26, 1fr);
+    width: 90%;
+    display: flex;
+    /* grid-template-columns: repeat(26, 1fr); */
 }
 
 .hide {
@@ -210,7 +212,7 @@ img {
     height: 40%;
 }
 
-.play-again {
+#play-again {
     position: relative;
     justify-content: center;
 }

@@ -12,15 +12,22 @@ import FE13Units from './characters/fe13Units.js';
 import FE14Units from './characters/fe14Units.js';
 import FE16Units from './characters/fe16Units.js';
 
-const unitList = document.querySelectorAll(".unit");
+// GET RID OF UNIT AND NAME VARIABLES, JUST ACCESS THEM THROUGH THE CHARACTER.img1 and CHARACTER.name KEYS!!!!!!!!!!!!!!!!!!
+
+// Array of <img> elements for character portraits
+const unitList = document.querySelectorAll(".portrait");
 const units = [...unitList];
 
+
+// Array for the <p> elements of the character names
 const nameList = document.querySelectorAll(".name");
 const names = [...nameList];
 
+// Variables for the divs of each game
 let gameElements;
 let gameBorder;
 
+// Array for the titles of the games
 const games = [
     "Shadow Dragon",
     "Echoes: Shadows of Valentia",
@@ -69,6 +76,7 @@ let threeHousesScore = 0;
 const timeInterval = 2000; // used for swapping portraits
 let playerScore = 0;
 
+
 const characters = [
     ...FE1Units,
     ...FE2Units,
@@ -96,16 +104,13 @@ function checkGuess(guess) {
     const inputElement = document.querySelector(".guess");
     const inputValue = inputElement.value;
     let storedString = inputValue.toLowerCase();
-    let displayName;
-
-    const currentDate = new Date();
-    const currentSeconds = currentDate.getSeconds();
 
     units.forEach((unit, index) => {
+        // If the user-input matches with the id of the <img> element
         if (storedString === units[index].id && !characters[index].isFound) {
             unit.setAttribute("src", characters[index].img1);
 
-            // imcrement the count for game associated with characters
+            // increment the count for game associated with characters
             if (characters[index].isFound === false) { // ensures you can't just enter the same character multiple times
                 switch (characters[index].game) {
                     case "Shadow Dragon":
@@ -150,9 +155,11 @@ function checkGuess(guess) {
                 }
             }
 
+            // mark character as found,
             characters[index].isFound = true;
-            unit.classList.add("found"); // to count score easier
-            playerScore = document.querySelectorAll(".found").length;
+            unit.classList.add("found");                             // Keeps track of user-score & allows mouse-hover to enlarge image
+            playerScore = document.querySelectorAll(".found").length;   // sets score to the length of the found list
+            // Checks for units with different punctuation in name to display that instead
             if (characters[index].hasOwnProperty("displayName")) {
                 names[index].innerHTML = characters[index].displayName;
             } else {
@@ -169,7 +176,9 @@ function checkGuess(guess) {
     checkWin();
 }
 
-window.checkGuess = checkGuess;
+const guessBtn = document.querySelector("#guess-btn");
+guessBtn.onclick = checkGuess;
+
 
 function changeImg() {
 
@@ -236,6 +245,7 @@ let contentGenerated = false;
 const startButton = document.getElementById("start-game");
 const startContainer = document.getElementById("start-container");
 const gameBoard = document.getElementById("game-board");
+
 
 function createGame() {
     if (contentGenerated) return;
@@ -320,6 +330,9 @@ function createGame() {
     gameElements = document.querySelectorAll(".game");
     gameBorder = [...gameElements];
     contentGenerated = true;
+
+    console.log(unitList);
+    console.log(units[5]);
 }
 
 // window.createGame = createGame;
@@ -384,6 +397,9 @@ function alphabetQuiz() {
     gameBorder = [...gameElements];
 
     contentGenerated = true;
+
+    console.log(unitList);
+    console.log(units[5]);
 }
 
 alphaButton.addEventListener("click", alphabetQuiz);
@@ -418,15 +434,18 @@ function movementHint() {
     hintCreated = true;
 }
 
-window.movementHint = movementHint;
+// Attaching movement hint function to the button on the page
+const moveHintBtn = document.querySelector("#move-type");
+moveHintBtn.onclick = movementHint;
 
+// Checks player score vs the total count of characters
 function checkWin() {
    if (playerScore === totalCount && gaveUp === false) {
     gameWin.classList.remove("hide");
    }
-   // return true
 }
 
+// Ends the quiz and reveals the missing answers, written in a bright-red
 function quit() {
     characters.forEach((unit, index) => {
         if (unit.isFound === false) {
@@ -443,6 +462,11 @@ function quit() {
     });
 }
 
+// Attaching quit function to the quit button on the page
+const quitBtn = document.querySelector("#give-up");
+quitBtn.onclick = quit;
+
+// Resets the quiz
 function playAgain() {
     gameWin.classList.add("hide");
 
@@ -487,20 +511,13 @@ function playAgain() {
     })
 }
 
-window.playAgain = playAgain
+const playAgainBtn = document.querySelector("#play-again");
+playAgainBtn.onclick = playAgain;
 
-document.addEventListener('DOMContentLoaded', () => {
-    const button = document.getElementById("give-up");
-    if (button) {
-        button.addEventListener("click", quit);
-    }
-    const button2 = document.getElementById("reset");
-    if (button2) {
-        button2.addEventListener("click", reset);
-    } 
-});
+// window.playAgain = playAgain
 
 
+// Allows user to input guess by pressing the 'Enter' key on the keyboard
 document.addEventListener("keydown", function (e) {
     if (e.key === "Enter") {
         checkGuess();

@@ -15,7 +15,7 @@
     </div>
     <div class="top-bar">
         <input type="text" placeholder="guess character name" class="guess"/>
-        <button onclick="checkGuess()" type="submit">Guess</button> 
+        <button type="submit" id="guess-btn">Guess</button> 
         <h2 class="score">0 / </h2>
         <button id="give-up" class="quit">Give Up?</button>
     </div>
@@ -41,7 +41,7 @@
     <div class="win-container hide">
         <div class="game-win">
             <h1 class="congrats">You Won! Congratulations!</h1>
-            <button onclick="playAgain()" class="play-again">Play Again?</button>
+            <button onclick="playAgain()" id="play-again" >Play Again?</button>
         </div>
     </div>
 
