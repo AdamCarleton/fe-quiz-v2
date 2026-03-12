@@ -99,11 +99,13 @@ const score = document.querySelector(".score");
 const gameWin = document.querySelector(".win-container");
 let gaveUp = false;
 
+
+const inputElement = document.querySelector(".guess");
+
 // CHECK GUESS
 function checkGuess(guess) {
-    const inputElement = document.querySelector(".guess");
-    const inputValue = inputElement.value;
-    let storedString = inputValue.toLowerCase();
+    
+    let storedString = inputElement.value.toLowerCase();
 
     units.forEach((unit, index) => {
         // If the user-input matches with the id of the <img> element
@@ -166,16 +168,17 @@ function checkGuess(guess) {
             } else {
                 names[index].innerHTML = characters[index].name;
             }
-            
+            inputElement.value = "";   
         }
     });
-    inputElement.value = "";
     highlightGame();
 
     score.innerHTML = `${playerScore} / ${characters.length}`;
-
+    
     checkWin();
 }
+
+inputElement.addEventListener("input", checkGuess);
 
 const guessBtn = document.querySelector("#guess-btn");
 guessBtn.addEventListener("click", checkGuess);
