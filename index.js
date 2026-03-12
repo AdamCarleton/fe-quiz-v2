@@ -157,8 +157,9 @@ function checkGuess(guess) {
 
             // mark character as found,
             characters[index].isFound = true;
-            unit.classList.add("found");                             // Keeps track of user-score & allows mouse-hover to enlarge image
+            unit.classList.add("found");                                // Keeps track of user-score & allows mouse-hover to enlarge image
             playerScore = document.querySelectorAll(".found").length;   // sets score to the length of the found list
+            
             // Checks for units with different punctuation in name to display that instead
             if (characters[index].hasOwnProperty("displayName")) {
                 names[index].innerHTML = characters[index].displayName;
@@ -177,7 +178,7 @@ function checkGuess(guess) {
 }
 
 const guessBtn = document.querySelector("#guess-btn");
-guessBtn.onclick = checkGuess;
+guessBtn.addEventListener("click", checkGuess);
 
 
 function changeImg() {
@@ -335,7 +336,6 @@ function createGame() {
     console.log(units[5]);
 }
 
-// window.createGame = createGame;
 startButton.addEventListener("click", createGame);
 
 const alphaButton = document.getElementById("alphabet");
@@ -436,7 +436,7 @@ function movementHint() {
 
 // Attaching movement hint function to the button on the page
 const moveHintBtn = document.querySelector("#move-type");
-moveHintBtn.onclick = movementHint;
+moveHintBtn.addEventListener("click", movementHint);
 
 // Checks player score vs the total count of characters
 function checkWin() {
@@ -464,7 +464,7 @@ function quit() {
 
 // Attaching quit function to the quit button on the page
 const quitBtn = document.querySelector("#give-up");
-quitBtn.onclick = quit;
+quitBtn.addEventListener("click", quit);
 
 // Resets the quiz
 function playAgain() {
@@ -512,9 +512,7 @@ function playAgain() {
 }
 
 const playAgainBtn = document.querySelector("#play-again");
-playAgainBtn.onclick = playAgain;
-
-// window.playAgain = playAgain
+playAgainBtn.addEventListener("click", playAgain);
 
 
 // Allows user to input guess by pressing the 'Enter' key on the keyboard
