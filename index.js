@@ -97,14 +97,14 @@ const totalCount = characters.length;
 const score = document.querySelector(".score");
 
 const gameWin = document.querySelector(".win-container");
-let gaveUp = false;
+let gaveUp = false; // tracks if user hit the give up button
 
 
 const inputElement = document.querySelector(".guess");
 
 // CHECK GUESS
 function checkGuess(guess) {
-    
+    if (gaveUp) return;
     let storedString = inputElement.value.toLowerCase();
 
     units.forEach((unit, index) => {
@@ -180,10 +180,8 @@ function checkGuess(guess) {
 
 inputElement.addEventListener("input", checkGuess);
 
-const guessBtn = document.querySelector("#guess-btn");
-guessBtn.addEventListener("click", checkGuess);
 
-
+// SWAPS IMAGES EVERY (time interval) SECONDS FOR CHARACTERS THAT HAVE MULTIPLE PORTRAITS
 function changeImg() {
 
     setInterval(() => {
@@ -414,7 +412,7 @@ let hintCreated = false;
 function movementHint() {
 
     if (hintCreated) return;
-
+    if (gaveUp) return;
     const portrait = document.querySelectorAll(".portrait");
 
     characters.forEach((unit, index) => {
@@ -433,7 +431,6 @@ function movementHint() {
             portrait[index].src = "./images/dragon.png";
         }
     });
-
     hintCreated = true;
 }
 
@@ -460,9 +457,9 @@ function quit() {
             names[index].innerHTML = unit.displayName;
         } else {
             names[index].innerHTML = unit.name;
-        }
-        
+        }   
     });
+    gaveUp = true;
 }
 
 // Attaching quit function to the quit button on the page
@@ -519,8 +516,8 @@ playAgainBtn.addEventListener("click", playAgain);
 
 
 // Allows user to input guess by pressing the 'Enter' key on the keyboard
-document.addEventListener("keydown", function (e) {
-    if (e.key === "Enter") {
-        checkGuess();
-    }
-})
+// document.addEventListener("keydown", function (e) {
+//     if (e.key === "Enter") {
+//         checkGuess();
+//     }
+// })
