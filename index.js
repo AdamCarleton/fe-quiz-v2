@@ -12,8 +12,6 @@ import FE13Units from './characters/fe13Units.js';
 import FE14Units from './characters/fe14Units.js';
 import FE16Units from './characters/fe16Units.js';
 
-// GET RID OF UNIT AND NAME VARIABLES, JUST ACCESS THEM THROUGH THE CHARACTER.img1 and CHARACTER.name KEYS!!!!!!!!!!!!!!!!!!
-
 // Array of <img> elements for character portraits
 const unitList = document.querySelectorAll(".portrait");
 const units = [...unitList];
@@ -109,7 +107,7 @@ function checkGuess(guess) {
 
     units.forEach((unit, index) => {
         // If the user-input matches with the id of the <img> element
-        if (storedString === units[index].id && !characters[index].isFound) {
+        if (storedString === unit.id && !characters[index].isFound) {
             unit.setAttribute("src", characters[index].img1);
 
             // increment the count for game associated with characters
@@ -312,6 +310,7 @@ function createGame() {
                 names.push(unitName);
             }
         });
+        score.innerText = `${playerScore} / ${totalCount}`;
     });
 
     // Get total number of character per game
@@ -341,6 +340,7 @@ startButton.addEventListener("click", createGame);
 
 const alphaButton = document.getElementById("alphabet");
 
+// CREATE A QUIZ BOARD WHERE CHARACTERS ARE ORDERED ALPHABETICALLY
 function alphabetQuiz() {
     const orderedCharacters = characters.sort((a,b) => a.name.localeCompare(b.name));
     if (contentGenerated) return;
@@ -398,9 +398,7 @@ function alphabetQuiz() {
     gameBorder = [...gameElements];
 
     contentGenerated = true;
-
-    console.log(unitList);
-    console.log(units[5]);
+    score.innerText = `${playerScore} / ${totalCount}`;
 }
 
 alphaButton.addEventListener("click", alphabetQuiz);
